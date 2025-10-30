@@ -7,6 +7,18 @@ To compare and create different types of **AWS Security Policies** used for secu
 
 ---
 
+# WalkThrough:
+
+<img width="1405" height="765" alt="Screenshot 2025-10-07 222811" src="https://github.com/user-attachments/assets/37b1e6c5-1b69-44c3-9dc6-1546155f8488" />
+
+-----------
+
+
+<img width="1309" height="770" alt="Screenshot 2025-10-07 222829" src="https://github.com/user-attachments/assets/87ef5d09-7c53-463a-bb78-33f008a9866d" />
+
+-------------
+---------
+
 ## Configure AWS
 
 <img width="1197" height="202" alt="Screenshot 2025-10-30 191613" src="https://github.com/user-attachments/assets/8bfed2aa-fa39-4845-ad44-f2f79d84e82a" />
@@ -48,6 +60,7 @@ To compare and create different types of **AWS Security Policies** used for secu
 
 File: s3-policy-cli.json
 
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -58,8 +71,10 @@ File: s3-policy-cli.json
     }
   ]
 }
+```
 
-Command: aws iam create-policy --policy-name MyS3ReadPolicyCLI --policy-document file://s3-policy-cli.json
+### Command:
+aws iam create-policy --policy-name MyS3ReadPolicyCLI --policy-document file://s3-policy-cli.json
 
 ### ✅ Output Example:
 
@@ -79,6 +94,7 @@ Command: aws iam create-policy --policy-name MyS3ReadPolicyCLI --policy-document
 
 2.Paste this JSON:
 
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -89,6 +105,7 @@ Command: aws iam create-policy --policy-name MyS3ReadPolicyCLI --policy-document
     }
   ]
 }
+```
 
 <img width="1919" height="882" alt="Screenshot 2025-10-30 191208" src="https://github.com/user-attachments/assets/fcba4914-f85d-4b49-8da0-e065e09f868c" />
 
@@ -105,6 +122,7 @@ Command: aws iam create-policy --policy-name MyS3ReadPolicyCLI --policy-document
 
 File: boundary-cli.json
 
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -115,6 +133,7 @@ File: boundary-cli.json
     }
   ]
 }
+```
 
 ### Command:
 
@@ -152,6 +171,7 @@ Name the role MyEC2Role → Create Role
 
 File: trust-policy-cli.json
 
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -162,6 +182,7 @@ File: trust-policy-cli.json
     }
   ]
 }
+```
 
 ### Commands:
 
